@@ -39,6 +39,36 @@ a {
     font-size: 18px;;
 }
 
+.hero {
+    display: flex;
+    background: #1f2937;
+    padding: 50px 100px;
+    gap: 20px;
+    align-items: center;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9Faf8;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.hero-right {
+    width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+    border: 1px solid #fff;
+}
+
 footer {
     background: #1f2937;
     color: white;
