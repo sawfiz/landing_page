@@ -103,6 +103,20 @@ h2 {
     font-size: 14px;
 }
 
+.quote {
+    background-color: #e5e7eb;
+    padding: 50px 200px;
+    font-size: 36px;
+    color: #1f2937;
+    font-style: italic;
+}
+
+.person {
+    font-style: normal;
+    font-weight: bolder;
+    text-align: end;
+    font-size: 28px;
+}
 footer {
     background: #1f2937;
     color: white;
