@@ -69,6 +69,40 @@ button {
     border: 1px solid #fff;
 }
 
+.info {
+    background-color: #fff;
+    padding: 20px 100px;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.item {
+    text-align: center;
+    width: 130px;
+}
+
+.product-photo {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.subtext-dark {
+    color: black;
+    font-size: 14px;
+}
+
 footer {
     background: #1f2937;
     color: white;
