@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
     margin: 0px;
@@ -7,14 +7,28 @@
     font-family: Roboto, sans-serif;
 }
 
-header {
+body {
+    width: 100%;
     background: #1f2937;
+}
+
+header, .hero, .info, .quote {
+    width: 1024px;
+}
+
+.header-container {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
     color: white;
     display: flex;
     height: 48px;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
 }
 
 .header-logo-text {
@@ -24,7 +38,7 @@ header {
 
 .subtext {
     color: #e5e7eb;
-    font-size: 18px;;
+    font-size: 18px;
 }
 
 ul {
@@ -36,92 +50,165 @@ ul {
 a {
     text-decoration: none;
     color: #e5e7eb;
-    font-size: 18px;;
+    font-size: 18px;
+}
+
+.hero-container {
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero {
     display: flex;
-    background: #1f2937;
-    padding: 50px 100px;
-    gap: 20px;
+    gap: 110px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .hero-main-text {
     font-size: 48px;
     font-weight: bolder;
-    color: #F9Faf8;
+    color: #f9faf8;
     margin: 10px 0;
 }
 
 button {
-    background-color: #3882F6;
+    background-color: #3882f6;
     color: white;
-    padding: 3px 20px;
-    border-radius: 5px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
     margin: 10px 0;
 }
 
 .hero-right {
-    width: 300px;
-    height: 200px;
+    width: 520px;
+    height: 240px;
     flex-shrink: 0;
-    border: 1px solid #fff;
+    background-image: url(https://images.unsplash.com/photo-1530975080071-4d6704a9a993?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    background-size: contain;
+}
+
+.info-container {
+    background-color: #fff;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 115px;
 }
 
 .info {
-    background-color: #fff;
-    padding: 20px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
 }
 
 h2 {
     text-align: center;
-    margin: 10px 0;
+    margin: px 0;
+    font-size: 36px;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
-.info-container {
+.product-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    align-items: center;
+    width: 820px;
+    height: 250px;
 }
 
 .item {
     text-align: center;
-    width: 130px;
+    width: 160px;
 }
 
 .product-photo {
     flex-shrink: 0;
-    width: 100px;
-    height: 100px;
-    border: 2px solid blue;
+    width: 100%;
+    height: 160px;
+    border: 5px solid #4e80ee;
     border-radius: 10px;
 }
 
-.subtext-dark {
-    color: black;
-    font-size: 14px;
+.product-description {
+    color: #636a75;
+    font-size: 16px;
 }
 
-.quote {
+.quote-container {
     background-color: #e5e7eb;
-    padding: 50px 200px;
-    font-size: 36px;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote {
+    padding: 0px 130px;
+}
+
+.quote-text {
     color: #1f2937;
+    font-size: 36px;
+    font-weight: thin;
     font-style: italic;
 }
 
-.person {
+.quote-person {
     font-style: normal;
     font-weight: bolder;
     text-align: end;
     font-size: 28px;
 }
-footer {
-    background: #1f2937;
-    color: white;
+
+.bottom-container {
+    background-color: white;
+    height: 350px;
     display: flex;
-    height: 48px;
     justify-content: center;
     align-items: center;
+    padding: 100px 0;
+}
+
+.blue-banner {
+    background-color: #4e80ee;
+    height: 150px;
+    padding: 50px 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.call-text {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.subtext-white {
+    font-size: 16px;
+    color: #e5e7eb;
+}
+
+button.button-white {
+    border: 1px solid white;
+}
+
+footer {
+    color: white;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
 }
